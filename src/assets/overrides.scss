@@ -1,0 +1,135 @@
+@use 'vars';
+
+// kendo
+.header {
+  .k-picker-solid,
+  .k-input-solid,
+  .k-button-solid-base {
+    border-color: rgba(0, 0, 0, 0.08);
+    color: vars.$header-text-color;
+    background-color: vars.$header-items-background;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02));
+
+    &:hover {
+      background-color: vars.$header-items-background;
+    }
+  }
+
+  .k-button-solid-base {
+    background: none;
+  }
+
+  .k-button-solid-primary {
+    border-color: vars.$primary-main-color;
+    color: vars.$header-text-color;
+    background-color: vars.$primary-main-color;
+  }
+}
+
+// table
+.kendo-table {
+  .k-grid-footer td {
+    font-weight: normal;
+  }
+
+  .k-grid-footer td {
+    font-weight: normal;
+  }
+
+  .k-grid-toolbar {
+    justify-content: flex-end;
+  }
+
+  .k-column-title {
+    white-space: initial;
+  }
+
+  .k-grid-header .k-header {
+    vertical-align: revert;
+  }
+
+  .k-column-title {
+    white-space: initial;
+  }
+
+  .k-grid-header .k-header {
+    vertical-align: revert;
+  }
+}
+
+// antd
+.ant-btn {
+  border-radius: vars.$button-border-radius;
+}
+
+.ant-table-cell {
+  text-align: center !important;
+}
+
+.header {
+  .ant-picker-range,
+  .ant-btn {
+    align-items: center;
+    border-radius: vars.$button-border-radius;
+    background-color: vars.$header-items-background;
+    border-color: rgba(0, 0, 0, 0.08);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.02));
+  }
+
+  .ant-dropdown-trigger,
+  .header__button > .ant-btn {
+    padding: 4px 10px;
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  .ant-dropdown-button {
+    button:first-child {
+      cursor: auto;
+    }
+  }
+
+  .ant-picker-input > input,
+  .anticon,
+  .ant-btn {
+    color: vars.$header-text-color;
+  }
+
+  .ant-picker-clear {
+    background-color: vars.$primary-main-color;
+  }
+}
+
+// nav-element
+.nav-element {
+  .ant-btn-icon-only.ant-btn-lg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: vars.$button-border-radius;
+    font-size: vars.$navbar-icon-size;
+  }
+
+  .ant-btn-icon-only.ant-btn-lg > * {
+    font-size: inherit;
+  }
+}
+
+// tooltip
+.ant-tooltip {
+  max-width: max-content;
+}
+
+.ant-tooltip-arrow-content,
+.ant-tooltip-inner {
+  --antd-arrow-background-color: vars.$tooltip-color;
+  background-color: vars.$tooltip-color;
+}
+
+.ant-tooltip-inner {
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px;
+}

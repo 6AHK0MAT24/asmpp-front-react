@@ -1,0 +1,11 @@
+@use 'src/assets/vars';
+
+.navbar {
+  background-color: vars.$navbar-background-color;
+  box-shadow: vars.$navbar-sidebar-box-shadow;
+  top: vars.$header-height;
+
+  a:last-child {
+    color: vars.$navbar-last-icon-color;
+  }
+}

@@ -1,0 +1,32 @@
+@use '../../../assets/vars';
+
+.kendo-table {
+  height: 100%;
+  max-height: calc(50vh - #{vars.$header-height} / 2);
+  width: 100%;
+
+  &_full-height {
+    max-height: calc(100vh - #{vars.$header-height});
+  }
+
+  &_loading {
+    opacity: 0.5;
+  }
+
+  &__loading-spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    z-index: 1;
+
+    &_loading {
+      display: revert;
+    }
+  }
+
+  &__container {
+    position: relative;
+  }
+}

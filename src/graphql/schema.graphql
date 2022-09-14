@@ -1,0 +1,104 @@
+directive @NotBlank(
+  message: String = "graphql.validation.NotBlank.message"
+) on ARGUMENT_DEFINITION | INPUT_FIELD_DEFINITION
+
+directive @Size(
+  min: Int = 0
+  max: Int = 2147483647
+  message: String = "graphql.validation.Size.message"
+) on ARGUMENT_DEFINITION | INPUT_FIELD_DEFINITION
+
+enum Action {
+  ADDED
+  UPDATED
+  DELETED
+}
+
+type Mutation {
+  createUser(input: UserDto!): UserData!
+  updateUser(id: ID!, input: UserDto!): UserData
+  deleteUserByUsername(username: String!): Boolean!
+  deleteUserById(id: ID!): Boolean!
+  updatePassword(username: String!, password: String!): Boolean!
+  loginUser(username: String!, password: String!): User
+}
+
+# An Int scalar that must be greater than or equal to zero
+scalar NonNegativeInt
+
+input PageableRequest {
+  page: NonNegativeInt!
+  itemsPerPage: PositiveInt!
+}
+
+# An Int scalar that must be a positive value
+scalar PositiveInt
+
+type Query {
+  getUserById(id: ID!): UserData
+  getUserByUsername(username: String!): UserData
+  getAllUsers: UserPacket!
+  getUsers(input: PageableRequest!): UserPacket!
+  getRoles: RolePacket!
+}
+
+type Role {
+  id: ID!
+  name: RoleSet!
+}
+
+type RolePacket {
+  items: [Role!]
+  totalItems: NonNegativeInt!
+}
+
+enum RoleSet {
+  ADMIN_ROLE
+  USER_ROLE
+  ROUTE_ROLE
+  TRIP_ROLE
+  STATION_ROLE
+  TRANSPORT_ROLE
+  CATEGORY_ROLE
+  DAY_ROLE
+  HOUR_ROLE
+  ONLINE_ROLE
+  DOOR_ROLE
+  REPORT_ROLE
+}
+
+# type Subscription {
+#     createdUser(input: UserDto!): User!
+# }
+type Subscription {
+  subUsers: UserSubData!
+}
+
+type User {
+  id: ID!
+  username: String!
+  roles: [Role!]
+  token: String
+}
+
+type UserData {
+  id: ID!
+  username: String!
+  roles: [Role!]
+}
+
+input UserDto {
+  username: String
+  password: String
+  roles: [RoleSet!]
+}
+
+type UserPacket {
+  items: [UserData!]
+  totalItems: NonNegativeInt!
+}
+
+type UserSubData {
+  user: UserData!
+  action: Action!
+}

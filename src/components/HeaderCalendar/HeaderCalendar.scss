@@ -1,0 +1,22 @@
+@use 'src/assets/vars';
+
+.header-calendar {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+
+  &__date-pickers {
+    display: flex;
+    max-width: 320px;
+
+    & > div {
+      margin: 0 10px;
+    }
+  }
+}

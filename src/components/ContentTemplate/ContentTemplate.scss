@@ -1,0 +1,9 @@
+@use 'src/assets/vars';
+
+.content-template {
+  margin-left: 2px;
+  width: 100%;
+  max-height: calc(100vh - #{vars.$header-height});
+  overflow-x: hidden;
+  overflow-y: auto;
+}

@@ -1,0 +1,15 @@
+export default {
+  admin: 'ADMIN_ROLE',
+  user: 'USER_ROLE',
+  route: 'ROUTE_ROLE',
+  trip: 'TRIP_ROLE',
+  station: 'STATION_ROLE',
+  transport: 'TRANSPORT_ROLE',
+  category: 'CATEGORY_ROLE',
+  day: 'DAY_ROLE',
+  hour: 'HOUR_ROLE',
+  online: 'ONLINE_ROLE',
+  door: 'DOOR_ROLE',
+  report: 'REPORT_ROLE',
+  import: 'IMPORT_ROLE',
+} as const

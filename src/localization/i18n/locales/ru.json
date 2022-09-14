@@ -1,0 +1,145 @@
+{
+  "common": {
+    "logout": "Выйти",
+    "direction": "Направление",
+    "dayType": "Дни недели",
+    "downloadExcel": "Загрузить в Excel"
+  },
+  "pages": {
+    "base": "Объем перевозок по маршруту парка",
+    "trip": "Рейсовый пассажиропоток",
+    "stops": "Остановочный пассажиропоток",
+    "efficiency": "Эффективность использования транспорта",
+    "chart": "Отчет по загруженности транспорта",
+    "dailyTransportation": "Суточная перевозка по дням обследования",
+    "transportLoad": "Загрузка ТС онлайн",
+    "passengerTraffic": "Остановочный пасажиропоток по периодам суток",
+    "monitoring": "Мониторинг ТС",
+    "users": "Зарегистрированные пользователи"
+  },
+  "excelTables": {
+    "routeNumber": "Объем_перевозок_по_маршруту_парка.xlsx",
+    "trip": "Совершенные_за_период_рейсы.xlsx",
+    "stops": "Остановочный_пассажиропоток.xlsx",
+    "efficiency": "Нагрузка_подвижного_состава.xlsx",
+    "chart": "Отчет_по_загруженности_транспорта.xlsx",
+    "dailyTransportation": "Суточная_перевозка_по_дням_обследования.xlsx",
+    "passengerTraffic": "Остановочный_пасажиропоток_по_периодам_суток.xlsx",
+    "monitoring": "Мониторинг_ТС.xlsx"
+  },
+  "tables": {
+    "common": {
+      "name": "Название",
+      "weekDays": "Дни недели",
+      "code": "Код",
+      "averageOccupancy": "Средняя наполняемость",
+      "maxLoad": "Max. нагрузка",
+      "route": "Маршрут №",
+      "passHour": "Пасс/час",
+      "passKm": "Пасс/км",
+      "date": "Дата",
+      "tripsCount": "Число рейсов",
+      "board": "Борт",
+      "modelVehicle": "Модель ТС",
+      "capacity": "Вместимость ТС",
+      "selectCompositionInTable": "Выберите нужный состав в таблице выше",
+      "occupancy": "Наполнение",
+      "load": "Нагрузка",
+      "generalOutcome": "Число вышедших",
+      "generalIncome": "Число вошедших",
+      "transported": "Перевезено",
+      "vehicleType": "Тип ТС"
+    },
+    "trafficVolume": {
+      "title": "Объем перевозок по маршруту парка",
+      "circular": "Кольцевой",
+      "tripsCount": "Число рейсов",
+      "transportationAB": "Перевозка А-Б",
+      "transportationBA": "Перевозка Б-А",
+      "transportationCommon": "Перевозка общая",
+      "coeffIrregularity": "Коэфф. неравномерности"
+    },
+    "tripsDuringPeriod": {
+      "title": "Совершенные за период рейсы",
+      "tripStart": "Начало рейса",
+      "tripsFinish": "Оканчание рейса",
+      "duration": "Длительность",
+      "direction": "Направление"
+    },
+    "tripsDetailsByStops": {
+      "title": "Детализация рейса по остановкам",
+      "factDeparture": "Факт отправления"
+    },
+    "stopPassengerTraffic": {
+      "title": "Остановочный пасажиропоток",
+      "averageIncome": "Ср. вошедших",
+      "averageOutcome": "Ср. вышедших"
+    },
+    "rollingStockLoad": {
+      "title": "Нагрузка подвижного состава",
+      "averageLoad": "Срудняя нагрузка"
+    },
+    "tripsPassengersRatio": {
+      "title": "Соотношение рейсов по обьему перевезенных пассажиров",
+      "tripsCategory": "Категория рейса",
+      "percentCategory": "Процентное содержание рейсов данной категории в общем числе рейсов"
+    },
+    "dailyTransportation": {
+      "title": "Суточная перевозка по дням обследования",
+      "transportedAverage": "Перевезено в среднем",
+      "transportedTotal": "Перевезено всего"
+    },
+    "stopPassengerTrafficByDaytime": {
+      "title": "Остановочный пассажиропоток по периодам суток",
+      "stoppingPassengerTrafficPeriod": "Остановочный пассажиропоток в период с",
+      "hours": "часов"
+    },
+    "systemReport": {
+      "title": "Отчет по работе системы",
+      "vehicleData": "Данные ТС",
+      "mcId": "МК-ID",
+      "numberPackets": "Число пакетов",
+      "door": "Дверь",
+      "entered": "Вход",
+      "exited": "Выход",
+      "allDoors": "По всем дверям"
+    },
+    "transportLoad": {
+      "title": "Загрузка ТС онлайн",
+      "currentRoute": "Актуальный маршрут"
+    },
+    "users": {
+      "addUser": "Добавить пользователя",
+      "username": "Имя пользователя",
+      "administrator": "Администратор",
+      "transportation": "Перевезено",
+      "volume": "Объем",
+      "dailyByDay": "Суточная по дням",
+      "passengerTraffic": "Пассажиропоток",
+      "regular": "Рейсовый",
+      "stopping": "Остановочный",
+      "transport": "Транспорт",
+      "efficiency": "Эффективнось",
+      "monitoring": "Мониторинг",
+      "reports": "Отчет",
+      "actions": "Действия",
+      "periodsOfDay": "По периодам суток",
+      "workload": "Загруженность",
+      "onlineDownload": "Онлайн загрузка"
+    }
+  },
+  "sidebar": {
+    "routeList": "Список маршрутов",
+    "transport": "Транспорт"
+  },
+  "calendar": {
+    "currentWeek": "Текущая неделя",
+    "currentMonth": "Текущий месяц"
+  },
+  "charts": {
+    "busFill": "График наполнения автобуса",
+    "passengers": "Пассажиров",
+    "graphType": "Тип графика:",
+    "lineType": "Тип линии:"
+  }
+}

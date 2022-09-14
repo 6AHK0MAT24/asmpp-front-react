@@ -1,0 +1,11 @@
+.chart-container {
+  &__demonstration {
+    display: flex;
+    padding: 10px;
+    width: 400px;
+
+    & > div {
+      margin: 0 10px;
+    }
+  }
+}

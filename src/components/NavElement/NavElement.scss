@@ -1,0 +1,10 @@
+@use 'src/assets/vars';
+
+.nav-element {
+  display: flex;
+  padding: 5px 10px;
+
+  &_active {
+    background-color: vars.$active-background;
+  }
+}

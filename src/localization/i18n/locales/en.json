@@ -1,0 +1,145 @@
+{
+  "common": {
+    "logout": "Logout",
+    "direction": "Direction",
+    "dayType": "Weekday type",
+    "downloadExcel": "Download to Excel"
+  },
+  "pages": {
+    "base": "Fleet Route Traffic Volume",
+    "trip": "Traffic Passenger Flow",
+    "stops": "Stop Passenger Flow",
+    "efficiency": "Transport Efficiency",
+    "chart": "Traffic Load Report",
+    "dailyTransportation": "Daily Traffic by Survey Day",
+    "transportLoad": "Vehicle Loading Online",
+    "passengerTraffic": "Stop Passenger Traffic by Periods of the Day",
+    "monitoring": "Vehicle Monitoring",
+    "users": "Registered Users"
+  },
+  "excelTables": {
+    "routeNumber": "Fleet_Route_Traffic_Volume.xlsx",
+    "trip": "Traffic_Passenger_Flow.xlsx",
+    "stops": "Stop_Passenger_Flow.xlsx",
+    "efficiency": "Transport_Efficiency.xlsx",
+    "chart": "Traffic_Load_Report.xlsx",
+    "dailyTransportation": "Daily_Traffic_by_Survey_Day.xlsx",
+    "passengerTraffic": "Stop_Passenger_Traffic_by_Periods_of_the_Day.xlsx",
+    "monitoring": "Vehicle_Monitoring.xlsx"
+  },
+  "tables": {
+    "common": {
+      "name": "Name",
+      "weekDays": "Days of the week",
+      "code": "Code",
+      "averageOccupancy": "Average occupancy",
+      "maxLoad": "Maximum load",
+      "route": "Route №",
+      "passHour": "Pass/hour",
+      "passKm": "Pass/km",
+      "date": "Date",
+      "tripsCount": "Number of trips",
+      "board": "Board",
+      "modelVehicle": "Vehicle model",
+      "capacity": "Vehicle capacity",
+      "selectCompositionInTable": "Select the desired composition in the table above",
+      "occupancy": "Occupancy",
+      "load": "Load",
+      "generalOutcome": "Number of released",
+      "generalIncome": "Number of people entered",
+      "transported": "Transported",
+      "vehicleType": "Vehicle type"
+    },
+    "trafficVolume": {
+      "tile": "Fleet Route Traffic Volume",
+      "circular": "Circular",
+      "tripsCount": "Number of trips",
+      "transportationAB": "Carriage A-B",
+      "transportationBA": "Carriage B-A",
+      "transportationCommon": "Carriage is general",
+      "coeffIrregularity": "Coeff. irregularities"
+    },
+    "tripsDuringPeriod": {
+      "title": "Trips made During the Period",
+      "direction": "Direction",
+      "tripStart": "Trips start",
+      "tripsFinish": "End of trip",
+      "duration": "Duration"
+    },
+    "tripsDetailsByStops": {
+      "title": "Trips Details by Stops",
+      "factDeparture": "Departure fact"
+    },
+    "stopPassengerTraffic": {
+      "title": "Stop Passenger Flow",
+      "averageIncome": "Average entrants",
+      "averageOutcome": "Average exits"
+    },
+    "rollingStockLoad": {
+      "title": "Rolling stock load",
+      "averageLoad": "Average load"
+    },
+    "tripsPassengersRatio": {
+      "title": "The ratio of trips by the volume of passengers carried",
+      "tripsCategory": "Trips category",
+      "percentCategory": "Percentage of flights of this category in the total number of flights"
+    },
+    "dailyTransportation": {
+      "title": "Daily transportation on examination days",
+      "transportedAverage": "Transported on average",
+      "transportedTotal": "Total transported"
+    },
+    "stopPassengerTrafficByDaytime": {
+      "title": "Stopping passenger traffic by periods of the day",
+      "stoppingPassengerTrafficPeriod": "Stopping passenger traffic in the period from",
+      "hours": "hours"
+    },
+    "systemReport": {
+      "title": "System operation report",
+      "vehicleData": "Vehicle data",
+      "mcId": "MC-ID",
+      "numberPackets": "Number of Packets",
+      "door": "Door",
+      "entered": "Entered",
+      "exited": "Exited",
+      "allDoors": "Across all doors"
+    },
+    "transportLoad": {
+      "title": "Vehicle Loading Online",
+      "currentRoute": "Current route"
+    },
+    "users": {
+      "addUser": "Add user",
+      "username": "Username",
+      "administrator": "Administrator",
+      "transportation": "Transportation",
+      "volume": "Volume",
+      "dailyByDay": "Daily by day",
+      "passengerTraffic": "Passenger traffic",
+      "regular": "Regular",
+      "stopping": "Stopping",
+      "transport": "Transport",
+      "efficiency": "Efficiency",
+      "monitoring": "Monitoring",
+      "reports": "Reports",
+      "actions": "Actions",
+      "periodsOfDay": "By periods of the day",
+      "workload": "Workload",
+      "onlineDownload": "Online download"
+    }
+  },
+  "sidebar": {
+    "routeList": "Route List",
+    "transport": "Transport"
+  },
+  "calendar": {
+    "currentWeek": "Current Week",
+    "currentMonth": "Current Month"
+  },
+  "charts": {
+    "busFill": "Bus filling schedule",
+    "passengers": "Passengers",
+    "graphType:": "Graph type:",
+    "lineType:": "Line type:"
+  }
+}

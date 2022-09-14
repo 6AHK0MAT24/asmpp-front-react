@@ -1,0 +1,65 @@
+@use 'src/assets/vars';
+
+.header {
+  align-items: center;
+  background: vars.$primary-main-color;
+  color: vars.$header-text-color;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  height: vars.$header-height;
+  width: 100%;
+
+  & * {
+    font-weight: 500;
+  }
+
+  // hidden for now
+  &__navbar-icon {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid vars.$header-text-color;
+    padding: 0 10px;
+
+    svg {
+      transform: rotate(90deg);
+      transition: transform vars.$animation-duration;
+    }
+
+    &_active svg {
+      transform: rotate(0);
+    }
+  }
+
+  &__controls {
+    display: flex;
+  }
+
+  &__dropdown {
+    display: flex;
+    align-items: center;
+  }
+
+  &__dropdown-timezone {
+    width: 120px;
+
+    & * {
+      width: 100% !important;
+    }
+  }
+
+  &__title {
+    color: vars.$header-text-color !important;
+    font-weight: 400 !important;
+    margin: 0 !important;
+
+    &_centered {
+      transform: translateX(40vw);
+    }
+  }
+
+  &__button {
+    align-self: center;
+    margin: 0 10px;
+  }
+}
